@@ -1,0 +1,75 @@
+:root{
+    --body-background-color: #141217;
+    --logo-color: #B7F90C;
+    --card-color: #1D1B20;
+
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style-type: none
+}
+
+body{
+
+    background-color: var(--body-background-color)!important;
+    min-height: 100vh;  
+
+}
+
+input::placeholder{
+    color: #A6A5AA!important;
+}
+
+.main-bar{
+    max-width: 1920px;
+    height: 100vh;
+}
+
+.side-bar{
+    display: flex;
+    justify-content: space-between;
+    height: 90vh;
+    width: 58px;
+    position: sticky;
+    top: 67px;
+}
+
+.side-bar a:hover{
+    border-radius: 50%;
+    background-color: #B7F90C;
+}
+
+@media screen and (max-width: 540px) {
+
+    .currency-drop{
+        left: 0px!important;
+    }
+    
+}
+
+@media screen and (max-width: 991px) {
+
+    .side-bar{
+        height: 56px;
+        width: 100%;
+    }
+    
+    
+}
+
+@media screen and (max-width: 850px) {
+
+    .side-bar{
+        display: none!important;
+    }
+    
+    
+}
+

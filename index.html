@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap-css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/charts.min.css">
+  <title>Kripto Admin Paneli</title>
+</head>
+
+<body class="d-flex justify-content-center align-items-center">
+
+  <main class="main-bar w-100 px-3">
+
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="image/dialpad-alt-regular-240.png" style="width: 35px;" alt=""><span
+            style="color: var(--logo-color);">KriptoCZDN</span></a>
+
+        <form class="d-sm-flex gap-3 align-items-center ms-3 w-50 d-none d-sm-block" role="search">
+          <img src="image/search-regular-240 (1).png" style="width: 28px; height: 28px;" alt="">
+          <input class="form-control me-2 text-white" style="background-color: var(--card-color); border: none;"
+            type="search" placeholder="Search" aria-label="Search">
+        </form>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse mt-2 mt-lg-0 justify-content-end" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav align-items-lg-center align-items-sm-center justify-content-sm-center mt-sm-2 mt-lg-0 flex-sm-row mb-lg-0">
+
+            <li class="nav-item">
+              <a class="nav-link p-1 rounded ms-sm-3 mb-sm-0 mb-2"
+                style="background-color: var(--card-color); width: fit-content;" aria-current="page" href="#">
+                <img src="image/bell-ring-solid-240.png" style="height: 26px; width: 26px;" alt=""></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link px-3 py-1 rounded ms-sm-3 mb-sm-0 mb-2 d-flex gap-3"
+                style="background-color: var(--card-color); width: fit-content;" href="#">
+                <img src="image/wallet-solid-240.png" style="height: 26px; width: 26px;" alt="">
+                <span class="text-white">$189.982,33</span> </a>
+            </li>
+
+            <li class="nav-item dropdown d-flex">
+              <a class="nav-link dropdown-toggle rounded p-1 ms-sm-3 mb-sm-0 mb-2"
+                style="background-color: var(--card-color); height: fit-content;" href="#" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="image/dollar-circle-solid-240.png" style="height: 26px; width: 26px;" alt="">
+                <span class="text-white">USD</span>
+                <img src="image/chevron-down-regular-240.png" style="height: 26px; width: 26px;" alt="">
+              </a>
+              <ul class="dropdown-menu currency-drop"
+                style="background-color: var(--card-color); position: absolute; left: -30px; margin-top: 5px;">
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img src="image/dollar-circle-solid-240.png" style="height: 26px; width: 26px;" alt="">
+                    <span class="text-white">EUR</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img src="image/dollar-circle-solid-240.png" style="height: 26px; width: 26px;" alt="">
+                    <span class="text-white">TRY</span>
+                  </a>
+                </li>
+
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown d-flex">
+              <a class="nav-link dropdown-toggle rounded ms-sm-3 mb-sm-0 mb-2" href="#" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="image/user-profile-photo.png" style="height: 35px; width: 35px;" alt="">
+                <span class="text-white">Oğuzhan Mesut</span>
+                <img src="image/chevron-down-regular-240.png" style="height: 26px; width: 26px;" alt="">
+              </a>
+              <ul class="dropdown-menu"
+                style="background-color: var(--card-color); position: absolute; margin-top: 5px;">
+                <li>
+                  <a class="dropdown-item text-white" href="#">
+                    Hesap Bilgileri
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-white" href="#">
+                    Ayalar
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-white" href="#">
+                    Destek
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-white" href="#">
+                    Çıkış Yap
+                  </a>
+                </li>
+
+              </ul>
+            </li>
+
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section class="container-fluid p-0 m-0 d-lg-flex gap-4">
+
+      <nav class="side-bar flex-lg-column">
+
+        <ul class="nav flex-lg-column gap-3">
+
+          <ul class="nav-item p-1 d-flex flex-lg-column gap-2 align-items-center rounded-5"
+            style="background-color: var(--card-color);">
+            <li>
+              <a class="nav-link rounded-5" aria-current="page" href="#">
+                <img src="image/dashboard-solid-240.png" style="width: 25px; height: 25px;" alt="">
+              </a>
+            </li>
+            <li>
+              <a class="nav-link rounded-5" aria-current="page" href="#">
+                <img src="image/signal-icon.png" style="width: 20px; height: 20px;" alt="">
+              </a>
+            </li>
+            <li>
+              <a class="nav-link rounded-5" aria-current="page" href="#">
+                <img src="image/wallet-alt-solid-240.png" style="width: 25px; height: 25px;" alt="">
+              </a>
+            </li>
+          </ul>
+
+          <ul class="nav-item p-1 d-flex flex-lg-column gap-2 align-items-center rounded-5"
+            style="background-color: var(--card-color);">
+            <li>
+              <a class="nav-link rounded-5" aria-current="page" href="#">
+                <img src="image/file-regular-240.png" style="width: 25px; height: 25px;" alt="">
+              </a>
+            </li>
+            <li>
+              <a class="nav-link rounded-5" aria-current="page" href="#">
+                <img src="image/envelope-regular-240.png" style="width: 25px; height: 25px;" alt="">
+              </a>
+            </li>
+            <li>
+              <a class="nav-link rounded-5" aria-current="page" href="#">
+                <img src="image/user-solid-240.png" style="width: 25px; height: 25px;" alt="">
+              </a>
+            </li>
+          </ul>
+
+          <ul class="nav-item p-1 d-flex flex-lg-column gap-2 align-items-center rounded-5"
+            style="background-color: var(--card-color);">
+            <li>
+              <a class="nav-link rounded-5" aria-current="page" href="#">
+                <img src="image/zap-solid-240.png" style="width: 25px; height: 25px;" alt="">
+              </a>
+            </li>
+            <li>
+              <a class="nav-link rounded-5" aria-current="page" href="#">
+                <img src="image/shopping-bag-solid-240.png" style="width: 25px; height: 25px;" alt="">
+              </a>
+            </li>
+            <li>
+              <a class="nav-link rounded-5" aria-current="page" href="#">
+                <img src="image/cart-solid-240.png" style="width: 25px; height: 25px;" alt="">
+              </a>
+            </li>
+          </ul>
+
+        </ul>
+
+        <ul class="nav flex-lg-column gap-3">
+
+          <ul class="nav-item p-1 d-flex flex-lg-column gap-2 align-items-center rounded-5"
+            style="background-color: var(--card-color);">
+            <li>
+              <a class="nav-link rounded-5" aria-current="page" href="#">
+                <img src="image/headphone-regular-240.png" style="width: 25px; height: 25px;" alt="">
+              </a>
+            </li>
+            <li>
+              <a class="nav-link rounded-5" aria-current="page" href="#">
+                <img src="image/cog-solid-240.png" style="width: 25px; height: 25px;" alt="">
+              </a>
+            </li>
+            <li>
+              <a class="nav-link rounded-5" aria-current="page" href="#">
+                <img src="image/question-mark-regular-240.png" style="width: 25px; height: 25px;" alt="">
+              </a>
+            </li>
+          </ul>
+
+        </ul>
+
+      </nav>
+
+      <section class="container-fluid text-center p-0">
+
+        <div class="container-fluid p-1 mt-md-3 mt-lg-0">
+          <div class="row gx-3 gy-3">
+
+            <div class="col-lg-3 col-sm-6 flex-grow">
+              <div class="rounded-5 pe-1 pb-1 pt-3 h-100" style="background-color: var(--card-color);">
+
+                <div class="d-flex align-items-center justify-content-around p-1 rounded-5"
+                  style="background-color: #252529; margin: 0 30px">
+                  <button type="button" class="btn text-white btn-sm m-0">Movement</button>
+                  <button type="button" class="btn btn-sm m-0" style="color: grey;">Volume</button>
+                </div>
+
+                <div class="container-fluid mt-2 p-3 d-flex flex-column justify-content-between" style="height: 90%;">
+
+                  <div class="d-flex align-items-center w-100 gap-2">
+                    <img src="image/bitcoin-icon.png" style="width: 50px;" alt="">
+                    <div class="w-100">
+                      <div class="d-flex justify-content-between align-items-center w-100">
+                        <p class="m-0 text-white" style="font-size: 14px;">Bitcoin</p>
+                        <p class="m-0 text-white" style="font-size: 14px;">$65,173.42</p>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <p class="m-0" style="font-size: 12px; color: grey!important;">BTC</p>
+                        <p class="m-0" style="font-size: 12px; color: var(--logo-color) !important;">13.40%</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="d-flex align-items-center w-100 gap-2">
+                    <img src="image/etherium-icon.png" style="width: 50px;" alt="">
+                    <div class="w-100">
+                      <div class="d-flex justify-content-between align-items-center w-100">
+                        <p class="m-0 text-white" style="font-size: 14px;">Ethereum</p>
+                        <p class="m-0 text-white" style="font-size: 14px;">$3,428.50</p>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <p class="m-0" style="font-size: 12px; color: grey!important;">ETH</p>
+                        <p class="m-0" style="font-size: 12px; color: red !important;">5.92%</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="d-flex align-items-center w-100 gap-2">
+                    <img src="image/litecoin-icon.png" style="width: 50px;" alt="">
+                    <div class="w-100">
+                      <div class="d-flex justify-content-between align-items-center w-100">
+                        <p class="m-0 text-white" style="font-size: 14px;">Litecoin</p>
+                        <p class="m-0 text-white" style="font-size: 14px;">$94.92</p>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <p class="m-0" style="font-size: 12px; color: grey!important;">LTC</p>
+                        <p class="m-0" style="font-size: 12px; color: red !important;">26.83%</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="d-flex align-items-center w-100 gap-2">
+                    <img src="image/solana-icon.png" style="width: 50px;" alt="">
+                    <div class="w-100">
+                      <div class="d-flex justify-content-between align-items-center w-100">
+                        <p class="m-0 text-white" style="font-size: 14px;">Solana</p>
+                        <p class="m-0 text-white" style="font-size: 14px;">$175.03</p>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <p class="m-0" style="font-size: 12px; color: grey!important;">SOL</p>
+                        <p class="m-0" style="font-size: 12px; color: var(--logo-color) !important;">1.94%</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="d-flex align-items-center w-100 gap-2">
+                    <img src="image/ripple-icon.png" style="width: 50px;" alt="">
+                    <div class="w-100">
+                      <div class="d-flex justify-content-between align-items-center w-100">
+                        <p class="m-0 text-white" style="font-size: 14px;">Ripple</p>
+                        <p class="m-0 text-white" style="font-size: 14px;">$614.35</p>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <p class="m-0" style="font-size: 12px; color: grey!important;">XRP</p>
+                        <p class="m-0" style="font-size: 12px; color: var(--logo-color) !important;">52.08%</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="d-flex align-items-center w-100 gap-2">
+                    <img src="image/tether-icon.png" style="width: 50px;" alt="">
+                    <div class="w-100">
+                      <div class="d-flex justify-content-between align-items-center w-100">
+                        <p class="m-0 text-white" style="font-size: 14px;">Tether</p>
+                        <p class="m-0 text-white" style="font-size: 14px;">$5,173.42</p>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <p class="m-0" style="font-size: 12px; color: grey!important;">BTC</p>
+                        <p class="m-0" style="font-size: 12px; color: red !important;">3.23%</p>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 flex-grow">
+              <div class="rounded-5 p-2 h-100 d-flex flex-column justify-content-evenly align-items-center"
+                style="background-color: var(--card-color);">
+
+                <h5 class="text-white text-start ms-4">Create Order</h5>
+
+                <div class="container-fluid p-0 mb-3">
+                  <div class="btn-group p-1 py-2" style="background-color:  #252529; width: 90%;" role="group"
+                    aria-label="Basic checkbox toggle button group">
+                    <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                    <label class="btn text-white" for="btncheck1" style="font-size: 12px;">Price Limit</label>
+
+                    <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                    <label class="btn text-white" for="btncheck2" style="font-size: 12px;">Market Price</label>
+
+                    <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                    <label class="btn text-white" for="btncheck3" style="font-size: 12px;">Stop Limit</label>
+                  </div>
+                </div>
+
+
+                <div class="container-fluid p-2 d-flex flex-column rounded-5" style="background-color: #252529;">
+                  <p class="text-white text-start m-0 mt-2 ms-3" style="font-size: 12px;">Buy</p>
+
+                  <div class="d-flex align-items-center justify-content-between px-2 my-3">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <img src="image/bitcoin-icon.png" style="width: 23px;" alt="">
+                      <p class="text-white m-0 ms-2" style="font-size: 12px;">Bitcoin</p>
+                    </div>
+                    <p class="m-0 text-white" style="font-size: 12px;">1 = <span>$65.173</span></p>
+                  </div>
+
+
+                  <p class="text-white text-start m-0 mt-2 ms-3" style="font-size: 12px;">Price Limit</p>
+                  <div class="input-group mb-2 mt-2">
+                    <input type="text" class="form-control ms-2" style="background-color: #111111; border: none;"
+                      aria-label="Text input with dropdown button">
+                    <button class="btn dropdown-toggle text-white me-2" style="background-color: #111111;" type="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">USD</button>
+                    <ul class="dropdown-menu dropdown-menu-end" style="background-color: var(--card-color);">
+                      <li><a class="dropdown-item text-white" href="#">TRY</a></li>
+                      <li><a class="dropdown-item text-white" href="#">EUR</a></li>
+                      <li><a class="dropdown-item text-white" href="#">YEN</a></li>
+                      <li><a class="dropdown-item text-white" href="#">JRP</a></li>
+                    </ul>
+                  </div>
+                  <p class="text-white text-start m-0 ms-3" style="font-size: 12px;">Price Limit</p>
+                  <div class="input-group mb-2 mt-2">
+                    <input type="text" class="form-control ms-2" style="background-color: #111111; border: none;"
+                      aria-label="Text input with dropdown button">
+                    <button class="btn dropdown-toggle text-white me-2" style="background-color: #111111;" type="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">USD</button>
+                    <ul class="dropdown-menu dropdown-menu-end" style="background-color: var(--card-color);">
+                      <li><a class="dropdown-item text-white" href="#">TRY</a></li>
+                      <li><a class="dropdown-item text-white" href="#">EUR</a></li>
+                      <li><a class="dropdown-item text-white" href="#">YEN</a></li>
+                      <li><a class="dropdown-item text-white" href="#">JRP</a></li>
+                    </ul>
+                  </div>
+
+                </div>
+
+
+                <div class="container-fluid d-flex justify-content-between mt-3">
+                  <h6 class="text-white text-start">Total</h6>
+                  <h6 class="text-white text-start" style="color: var(--logo-color)!important;">$130.346</h6>
+                </div>
+
+                <button type="button" class="btn btn-primary mb-2 mt-2"
+                  style="width: 90%; background-color: var(--logo-color); border: none; color: black; font-weight: 800;">Place
+                  Order</button>
+
+
+
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-sm-12 flex-grow">
+              <div class="rounded-5 p-2 h-100" style="background-color: var(--card-color);">
+
+                <div class="d-none d-sm-block">
+                  <div class="container-fluid p-2 d-flex justify-content-between mb-3 w-100">
+
+                    <div class="me-2 d-flex gap-2 mb-2 align-items-center">
+                      <img src="image/bitcoin-icon.png" style="width: 70px;" alt="">
+                      <div>
+                        <p class="m-0 text-start text-white">Bitcoin</p>
+                        <p class="m-0 text-start" style="color: grey;">BTC</p>
+                      </div>
+                    </div>
+
+                    <div class="d-flex align-items-center justify-content-around p-1 rounded-4"
+                      style="background-color: #252529; width: 60%;">
+                      <button type="button" class="btn btn-sm m-0">
+                        <p class="m-0 text-center text-white" style="font-size: 14px;">$1.934,45</p>
+                        <p class="m-0 text-center" style="color: grey; font-size: 12px;">24 Hours Movement</p>
+                      </button>
+                      <button type="button" class="btn d-none d-sm-block btn-sm m-0" style="color: grey;">
+                        <p class="m-0 text-center text-white" style="font-size: 14px;">$27.965,75</p>
+                        <p class="m-0 text-center" style="color: grey; font-size: 12px;">24 Hours Volume</p>
+                      </button>
+                    </div>
+
+                  </div>
+
+                  <div class="container-fluid d-flex justify-content-between mb-3">
+                    <div>
+                      <button type="button" class="btn text-white border-dark"
+                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        1D
+                      </button>
+                      <button type="button" class="btn text-white border-dark"
+                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        7D
+                      </button>
+                      <button type="button" class="btn text-white border-dark"
+                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        1M
+                      </button>
+                      <button type="button" class="btn text-white border-dark"
+                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        3M
+                      </button>
+                      <button type="button" class="btn text-dark border-dark"
+                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem; background-color: var(--logo-color);">
+                        1Y
+                      </button>
+                      <button type="button" class="btn text-white border-dark"
+                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        All
+                      </button>
+                    </div>
+
+                    <div>
+                      <button type="button" class="btn text-dark border-dark"
+                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem; background-color: var(--logo-color);">
+                        Line
+                      </button>
+                      <button type="button" class="btn text-white border-dark"
+                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        Candle
+                      </button>
+                    </div>
+                  </div>
+
+
+                  <div class="mt-3">
+                    <table style="--secondary-axes-color: #2B2B2B;"
+                      class="charts-css show-data-axes line show-labels show-primary-axis show-5-secondary-axes show-1-secondary-axes">
+                      <tr>
+                        <th scope="row" style="color: gray;"> Jan </th>
+                        <td style="--start: 0.1; --end: 0.32; --color: var(--logo-color);"> <span class="data"
+                            style="color: white; z-index: 1;"> 32K </span> </td>
+                      </tr>
+                      <tr>
+                        <th scope="row" style="color: gray;"> Feb </th>
+                        <td style="--start: 0.32; --end: 0.20; --color: var(--logo-color);"><span class="data"
+                            style="color: white;"> 20K </span> </td>
+                      </tr>
+                      <tr>
+                        <th scope="row" style="color: gray;"> Mar </th>
+                        <td style="--start: 0.20; --end: 0.80; --color: var(--logo-color);"><span class="data"
+                            style="color: white;"> 80K </span> </td>
+                      </tr>
+                      <tr>
+                        <th scope="row" style="color: gray;"> Apr </th>
+                        <td style="--start: 0.80; --end: 0.50; --color: var(--logo-color);"><span class="data"
+                            style="color: white;"> 50K </span> </td>
+                      </tr>
+                      <tr>
+                        <th scope="row" style="color: gray;"> May </th>
+                        <td style="--start: 0.50; --end: 0.78; --color: var(--logo-color);"><span class="data"
+                            style="color: white;"> 78K </span> </td>
+                      </tr>
+                      <tr>
+                        <th scope="row" style="color: gray;"> Jun </th>
+                        <td style="--start: 0.78; --end: 0.40; --color: var(--logo-color);"><span class="data"
+                            style="color: white;"> 40K </span> </td>
+                      </tr>
+                      <tr>
+                        <th scope="row" style="color: gray;"> Jul </th>
+                        <td style="--start: 0.40; --end: 0.90; --color: var(--logo-color);"><span class="data"
+                            style="color: white;"> 90K </span> </td>
+                      </tr>
+                      <tr>
+                        <th scope="row" style="color: gray;"> Aug </th>
+                        <td style="--start: 0.90; --end: 0.30; --color: var(--logo-color);"><span class="data"
+                            style="color: white;"> 30K </span> </td>
+                      </tr>
+                      <tr>
+                        <th scope="row" style="color: gray;"> Sep </th>
+                        <td style="--start: 0.30; --end: 0.96; --color: var(--logo-color);"><span class="data"
+                            style="color: white;"> 96K </span> </td>
+                      </tr>
+                      <tr>
+                        <th scope="row" style="color: gray;"> Oct </th>
+                        <td style="--start: 0.96; --end: 0.94; --color: var(--logo-color);"><span class="data"
+                            style="color: white;"> 94K </span> </td>
+                      </tr>
+                      <tr>
+                        <th scope="row" style="color: gray;"> Nov </th>
+                        <td style="--start: 0.94; --end: 0.90; --color: var(--logo-color);"><span class="data"
+                            style="color: white;"> 90K </span> </td>
+                      </tr>
+                      <tr>
+                        <th scope="row" style="color: gray;"> Dev </th>
+                        <td style="--start: 0.90; --end: 0.76; --color: var(--logo-color);"><span class="data"
+                            style="color: white;"> 76K </span> </td>
+                      </tr>
+
+                    </table>
+                  </div>
+                </div>
+
+                <div class="warring-message d-block d-sm-none">
+                  <img class="my-3" src="image/phone.png" width="60px" alt="">
+                  <h4 class="text-white text-center">"Grafiği görüntüleyebilmek için lütfen telefonunuzu yatay modda
+                    kullanınız...!"</h4>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid p-1 mt-sm-3 mt-lg-2">
+          <div class="row gx-3 gy-3">
+
+            <div class="col-lg-3 col-sm-6 flex-grow">
+              <div class="rounded-5 p-2 h-100" style="background-color: var(--card-color);">
+
+                <div class="container-fluid py-2 d-flex flex-column">
+                  <h5 class="text-white text-start">Runing Trade</h5>
+
+                  <div class="container-fluid h-100">
+                    <div>
+                      <table style="width: 100%; height: 100%;">
+                        <thead>
+                          <tr class="text-white">
+                            <th class="text-start" style="font-size: 12px;">Price</th>
+                            <th class="text-center" style="font-size: 12px;">Amount</th>
+                            <th class="text-end" style="font-size: 12px;">Time</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="text-start" style="font-size: 12px; color: var(--logo-color);">$65,159</td>
+                            <td class="text-white text-center" style="font-size: 12px;">0.012BTC</td>
+                            <td class="text-white text-end" style="font-size: 12px;">15:40:14</td>
+                          </tr>
+                          <tr>
+                            <td class="text-start" style="font-size: 12px; color: var(--logo-color);">$65,142</td>
+                            <td class="text-white text-center" style="font-size: 12px;">0.12BTC</td>
+                            <td class="text-white text-end" style="font-size: 12px;">14:21:02</td>
+                          </tr>
+                          <tr>
+                            <td class="text-start" style="font-size: 12px; color: var(--logo-color);">$65,137</td>
+                            <td class="text-white text-center" style="font-size: 12px;">1.42BTC</td>
+                            <td class="text-white text-end" style="font-size: 12px;">13:54:11</td>
+                          </tr>
+                          <tr>
+                            <td class="text-start" style="font-size: 12px; color: var(--logo-color);">$65,130</td>
+                            <td class="text-white text-center" style="font-size: 12px;">0.001BTC</td>
+                            <td class="text-white text-end" style="font-size: 12px;">13:24:04</td>
+                          </tr>
+                          <tr>
+                            <td class="text-start" style="font-size: 12px; color: red">$65,113</td>
+                            <td class="text-white text-center" style="font-size: 12px;">2.56BTC</td>
+                            <td class="text-white text-end" style="font-size: 12px;">13:10:12</td>
+                          </tr>
+                          <tr>
+                            <td class="text-start" style="font-size: 12px; color:red">$65,115</td>
+                            <td class="text-white text-center" style="font-size: 12px;">12.4BTC</td>
+                            <td class="text-white text-end" style="font-size: 12px;">12:32:11</td>
+                          </tr>
+                          <tr>
+                            <td class="text-start" style="font-size: 12px; color: var(--logo-color);">$65,117</td>
+                            <td class="text-white text-center" style="font-size: 12px;">0.56BTC</td>
+                            <td class="text-white text-end" style="font-size: 12px;">11:30:14</td>
+                          </tr>
+                          <tr>
+                            <td class="text-start" style="font-size: 12px; color: red">$65,112</td>
+                            <td class="text-white text-center" style="font-size: 12px;">0.57BTC</td>
+                            <td class="text-white text-end" style="font-size: 12px;">10:23:57</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 flex-grow">
+              <div class="rounded-5 h-100 d-flex flex-column gap-2">
+                <div class="flex-grow-1 p-2 rounded-5" style="background-color: var(--card-color);">
+                  <span class="d-flex justify-content-between m-2">
+                    <h5 class="text-white text-start">My Order</h5>
+                    <p class="text-end" style="color: var(--logo-color);">View All</p>
+                  </span>
+                  
+                  <div class="m-2">
+
+                    <table style="background-color: #252529; width: 100%;" class="rounded-3 mb-2">
+                      <tr>
+                        <td class="text-start ps-3 py-3" style="font-size: 10px; color: var(--logo-color);">$91,893</td>
+                        <td class="text-white text-center " style="font-size: 10px;">1.41BTC</td>
+                        <td class="text-white text-end pe-3" style="font-size: 10px;">0.12/3.5BTC</td>
+                      </tr>
+                    </table>
+                    <table style="background-color: #252529; width: 100%;" class="rounded-3 mb-2">
+                      <tr>
+                        <td class="text-start ps-3 py-3" style="font-size: 10px; color: var(--logo-color);">$91,893</td>
+                        <td class="text-white text-center " style="font-size: 10px;">1.41BTC</td>
+                        <td class="text-white text-end pe-3" style="font-size: 10px;">0.12/3.5BTC</td>
+                      </tr>
+                    </table>
+                    <table style="background-color: #252529; width: 100%;" class="rounded-3">
+                      <tr>
+                        <td class="text-start ps-3 py-3" style="font-size: 10px; color: var(--logo-color);">$91,893</td>
+                        <td class="text-white text-center " style="font-size: 10px;">1.41BTC</td>
+                        <td class="text-white text-end pe-3" style="font-size: 10px;">0.12/3.5BTC</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <div class="flex-grow px-2 py-3 rounded-5" style="background-color: var(--card-color);">
+                  <h5 class="text-white text-start ms-3">Order Filled</h5>
+                  <div class="m-2">
+                    <table style="background-color: #252529; width: 100%;" class="rounded-3">
+                      <tr>
+                        <td class="text-start ps-3 py-3" style="font-size: 10px; color: var(--logo-color);">$91,893</td>
+                        <td class="text-white text-center " style="font-size: 10px;">1.41BTC</td>
+                        <td class="text-white text-end pe-3" style="font-size: 10px;">0.12/3.5BTC</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-sm-12 flex-grow">
+              <div class="rounded-5 p-2 h-100" style="background-color: var(--card-color); height: 100%;">
+
+                <h5 class="text-white text-start m-2">Order Book</h5>
+
+                <div class="container-fluid w-100 pb-3" style="height: 100%;">
+
+                  <div class="w-100 d-flex flex-md-row flex-column pb-3" style="height: 100%;">
+
+                    <div class="w-100 me-md-3 mb-3 mb-md-0">
+                      <table style="width: 100%; height: 100%;">
+                        <thead>
+                          <tr class="text-white">
+                            <th class="text-start" style="font-size: 12px;">Price (USDT)</th>
+                            <th class="text-center" style="font-size: 12px;">Size (BTC)</th>
+                            <th class="text-end" style="font-size: 12px;">Sum(USDT)</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="text-start" style="font-size: 12px; color: var(--logo-color);">$65,159</td>
+                            <td class="text-white text-center" style="font-size: 12px;">0.012BTC</td>
+                            <td class="text-white text-end" style="font-size: 12px;">15:40:14</td>
+                          </tr>
+                          <tr>
+                            <td class="text-start" style="font-size: 12px; color: var(--logo-color);">$65,142</td>
+                            <td class="text-white text-center" style="font-size: 12px;">0.12BTC</td>
+                            <td class="text-white text-end" style="font-size: 12px;">14:21:02</td>
+                          </tr>
+                          <tr>
+                            <td class="text-start" style="font-size: 12px; color: var(--logo-color);">$65,137</td>
+                            <td class="text-white text-center" style="font-size: 12px;">1.42BTC</td>
+                            <td class="text-white text-end" style="font-size: 12px;">13:54:11</td>
+                          </tr>
+                          <tr>
+                            <td class="text-start" style="font-size: 12px; color: var(--logo-color);">$65,130</td>
+                            <td class="text-white text-center" style="font-size: 12px;">0.001BTC</td>
+                            <td class="text-white text-end" style="font-size: 12px;">13:24:04</td>
+                          </tr>
+                          <tr>
+                            <td class="text-start" style="font-size: 12px; color: red">$65,113</td>
+                            <td class="text-white text-center" style="font-size: 12px;">2.56BTC</td>
+                            <td class="text-white text-end" style="font-size: 12px;">13:10:12</td>
+                          </tr>
+                          <tr>
+                            <td class="text-start" style="font-size: 12px; color:red">$65,115</td>
+                            <td class="text-white text-center" style="font-size: 12px;">12.4BTC</td>
+                            <td class="text-white text-end" style="font-size: 12px;">12:32:11</td>
+                          </tr>
+                          <tr>
+                            <td class="text-start" style="font-size: 12px; color: var(--logo-color);">$65,117</td>
+                            <td class="text-white text-center" style="font-size: 12px;">0.56BTC</td>
+                            <td class="text-white text-end" style="font-size: 12px;">11:30:14</td>
+                          </tr>
+                          <tr>
+                            <td class="text-start" style="font-size: 12px; color: red">$65,112</td>
+                            <td class="text-white text-center" style="font-size: 12px;">0.57BTC</td>
+                            <td class="text-white text-end" style="font-size: 12px;">10:23:57</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <div class="w-100 ms-md-3" style="height: 100%;">
+                      <table style="width: 100%; height: 100%;">
+                        <thead>
+                          <tr class="text-white">
+                            <th class="text-start" style="font-size: 12px;">Price (USDT)</th>
+                            <th class="text-center" style="font-size: 12px;">Size (BTC)</th>
+                            <th class="text-end" style="font-size: 12px;">Sum(USDT)</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                              <td class="text-start" style="font-size: 12px; color: var(--logo-color);">$65,159</td>
+                              <td class="text-white text-center" style="font-size: 12px;">0.012BTC</td>
+                              <td class="text-white text-end" style="font-size: 12px;">15:40:14</td>
+                            </tr>
+ 
+                          <tr>
+                            <td class="text-start" style="font-size: 12px; color: var(--logo-color);">$65,142</td>
+                            <td class="text-white text-center" style="font-size: 12px;">0.12BTC</td>
+                            <td class="text-white text-end" style="font-size: 12px;">14:21:02</td>
+                          </tr>
+                          <tr>
+                            <td class="text-start" style="font-size: 12px; color: var(--logo-color);">$65,137</td>
+                            <td class="text-white text-center" style="font-size: 12px;">1.42BTC</td>
+                            <td class="text-white text-end" style="font-size: 12px;">13:54:11</td>
+                          </tr>
+                          <tr>
+                            <td class="text-start" style="font-size: 12px; color: var(--logo-color);">$65,130</td>
+                            <td class="text-white text-center" style="font-size: 12px;">0.001BTC</td>
+                            <td class="text-white text-end" style="font-size: 12px;">13:24:04</td>
+                          </tr>
+                          <tr>
+                            <td class="text-start" style="font-size: 12px; color: red">$65,113</td>
+                            <td class="text-white text-center" style="font-size: 12px;">2.56BTC</td>
+                            <td class="text-white text-end" style="font-size: 12px;">13:10:12</td>
+                          </tr>
+                          <tr>
+                            <td class="text-start" style="font-size: 12px; color:red">$65,115</td>
+                            <td class="text-white text-center" style="font-size: 12px;">12.4BTC</td>
+                            <td class="text-white text-end" style="font-size: 12px;">12:32:11</td>
+                          </tr>
+                          <tr>
+                            <td class="text-start" style="font-size: 12px; color: var(--logo-color);">$65,117</td>
+                            <td class="text-white text-center" style="font-size: 12px;">0.56BTC</td>
+                            <td class="text-white text-end" style="font-size: 12px;">11:30:14</td>
+                          </tr>
+                          <tr>
+                            <td class="text-start" style="font-size: 12px; color: red">$65,112</td>
+                            <td class="text-white text-center" style="font-size: 12px;">0.57BTC</td>
+                            <td class="text-white text-end" style="font-size: 12px;">10:23:57</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    
+                  </div>
+
+                  
+                </div>
+
+
+               
+
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+
+
+
+  </main>
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
